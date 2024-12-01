@@ -15,7 +15,19 @@ http://localhost:9600/
 Kibana
 http://localhost:5601/
 
-'''docker-compose down''' 
+```docker-compose down```
+
+# Elastic search queries
+
+get all 
+```POST /ab_nyc_2019/_search
+{
+  "query" :{
+    "match_all" : {
+      
+    }
+  }
+}```
 
 # Few docker commands
 force recreate containers
