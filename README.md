@@ -15,7 +15,7 @@ http://localhost:9600/
 Kibana
 http://localhost:5601/
 
-'''docker-compose down''' 
+```docker-compose down```
 
 # Few docker commands
 force recreate containers
