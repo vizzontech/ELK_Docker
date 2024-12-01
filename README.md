@@ -2,7 +2,7 @@
 ElasticSearch Kibana Logstash using docker compose
 
 # Docker compose 
-docker-compose up 
+```docker-compose up``` 
 
 open browers for following running services 
 
@@ -15,41 +15,41 @@ http://localhost:9600/
 Kibana
 http://localhost:5601/
 
-docker-compose down 
+'''docker-compose down''' 
 
 # Few docker commands
-//force recreate containers
-docker-compose up --force-recreate
+force recreate containers
+```docker-compose up --force-recreate```
 
-//Get running container 
-docker ps
+Get running container 
+```docker ps```
 
-//Open interactive session of container 
-docker exec -it <ContainerId> sh
+Open interactive session of container 
+```docker exec -it <ContainerId> sh```
 
-//exist interactive session of container
-Exit(Ctl + p , Ctr + q)
+Exist interactive session of container
+```Exit(Ctl + p , Ctr + q)```
 
-//remove all the running containers 
-docker rm (docker ps -aq) -f 
+Remove all running containers 
+```docker rm (docker ps -aq) -f``` 
 
-//filter the containers by name
-docker ps --filter "name=elasticsearch" --filter "name=kibana" --filter "name=logstash"
+Filter the containers by name
+```docker ps --filter "name=elasticsearch" --filter "name=kibana" --filter "name=logstash"```
 
-//Get all running containers
-docker ps all 
+Get all running containers
+```docker ps all ```
 
-//get volume 
-docker volume ls
+Get volume 
+```docker volume ls```
 
-//get network 
-docker network ls
+Get network 
+```docker network ls```
 
-//remove volume by id
-docker volume rm '<volumeId>'
+Remove volume by id
+```docker volume rm '<volumeId>'```
 
-//remove network by id 
-docker network rm <NetworkId>
+Remove network by id 
+```docker network rm NetworkId```
 ----------------
 sample data available here https://www.kaggle.com/
 ----------
