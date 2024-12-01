@@ -48,8 +48,6 @@ Get network
 Remove volume by id
 ```docker volume rm '<volumeId>'```
 
-Remove network by id 
-```docker network rm NetworkId```
 ----------------
 sample data available here https://www.kaggle.com/
 ----------
