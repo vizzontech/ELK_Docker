@@ -21,14 +21,18 @@ http://localhost:5601/
 # Elastic search queries
 
 get all 
-```POST /ab_nyc_2019/_search
+
+```
+POST /ab_nyc_2019/_search
 {
   "query" :{
     "match_all" : {
       
     }
   }
-}```
+}
+
+```
 
 
 # Few docker commands
