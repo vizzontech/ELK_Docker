@@ -2,7 +2,11 @@
 ElasticSearch Kibana Logstash using docker compose
 
 # Docker compose 
-```docker-compose up``` 
+
+```
+docker-compose up
+
+``` 
 
 open browers for following running services 
 
@@ -15,8 +19,10 @@ http://localhost:9600/
 Kibana
 http://localhost:5601/
 
-```docker-compose down```
-<<<<<<< HEAD
+```
+docker-compose down
+
+```
 
 # Elastic search queries
 
@@ -37,34 +43,62 @@ POST /ab_nyc_2019/_search
 
 # Few docker commands
 force recreate containers
-```docker-compose up --force-recreate```
+```
+docker-compose up --force-recreate
+
+```
 
 Get running container 
-```docker ps```
+```
+docker ps
+
+```
 
 Open interactive session of container 
-```docker exec -it <ContainerId> sh```
+```
+docker exec -it <ContainerId> sh
+
+```
 
 Exist interactive session of container
-```Exit(Ctl + p , Ctr + q)```
+```
+Exit(Ctl + p , Ctr + q)
+
+```
 
 Remove all running containers 
-```docker rm (docker ps -aq) -f``` 
+```
+docker rm (docker ps -aq) -f
+
+``` 
 
 Filter the containers by name
-```docker ps --filter "name=elasticsearch" --filter "name=kibana" --filter "name=logstash"```
-
+```
+docker ps --filter "name=elasticsearch" --filter "name=kibana" --filter "name=logstash
+```
 Get all running containers
-```docker ps all ```
+
+```
+docker ps all 
+```
 
 Get volume 
-```docker volume ls```
+```
+docker volume ls
+```
 
 Get network 
-```docker network ls```
+
+```
+docker network ls
+
+```
 
 Remove volume by id
-```docker volume rm '<volumeId>'```
+```
+docker volume rm '<volumeId>
+
+```
 
 ----------------
 sample data available here https://www.kaggle.com/
