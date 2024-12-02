@@ -29,8 +29,7 @@ get all
     }
   }
 }```
-=======
->>>>>>> be5470d00d954939e01ad6e3dc5ba9a18f2a062d
+
 
 # Few docker commands
 force recreate containers
