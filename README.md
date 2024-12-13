@@ -41,7 +41,7 @@ POST /ab_nyc_2019/_search
 ```
 
 
-# Few docker commands
+# Docker commands
 force recreate containers
 ```
 docker-compose up --force-recreate
@@ -101,5 +101,5 @@ docker volume rm '<volumeId>
 ```
 
 ----------------
-sample data available here https://www.kaggle.com/
+https://www.kaggle.com](https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data)
 ----------
