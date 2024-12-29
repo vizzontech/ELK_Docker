@@ -1,7 +1,8 @@
 # ELK_Docker
 ElasticSearch Kibana Logstash using docker compose
 
-# Docker compose 
+
+# To start the ELK stack on docker
 
 ```
 docker-compose up
@@ -19,11 +20,22 @@ http://localhost:9600/
 Kibana
 http://localhost:5601/
 
+
+# To stop the ELK stack in Docker.
+
 ```
 docker-compose down
 
-```
+``` 
 
+# Remove volume
+
+By default, running 'docker-compose down' does not remove volumes. Remove the volume to avoid duplicate data from Logstash.
+
+```
+docker volume rm elk_docker_esdata
+
+``` 
 # Elastic search queries
 
 get all 
@@ -94,12 +106,24 @@ docker network ls
 
 ```
 
-Remove volume by id
+Remove volume
 ```
 docker volume rm '<volumeId>
 
+docker volume prune
 ```
 
-----------------
-sample data available here https://www.kaggle.com/
-----------
+
+links
+
+https://www.kaggle.com/
+
+https://www.elastic.co/guide/en/elasticsearch/client/net-api/current/getting-started-net.html
+
+https://medium.com/@lucasgarciaz2018/using-elasticsearch-and-nest-in-net-9821f64cfa76
+
+https://www.elastic.co/guide/en/elasticsearch/client/net-api/current/getting-started-net.html
+
+https://www.tutorialspoint.com/elasticsearch/elasticsearch_cat_apis.htm
+
+

@@ -53,4 +53,5 @@ networks:
 
 volumes:
   esdata:
+    name : elk_docker_esdata
     driver: local
