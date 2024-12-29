@@ -53,7 +53,7 @@ POST /ab_nyc_2019/_search
 ```
 
 
-# Few docker commands
+# Docker commands
 force recreate containers
 ```
 docker-compose up --force-recreate
@@ -110,20 +110,6 @@ Remove volume
 ```
 docker volume rm '<volumeId>
 
-docker volume prune
 ```
-
-
-links
-
-https://www.kaggle.com/
-
-https://www.elastic.co/guide/en/elasticsearch/client/net-api/current/getting-started-net.html
-
-https://medium.com/@lucasgarciaz2018/using-elasticsearch-and-nest-in-net-9821f64cfa76
-
-https://www.elastic.co/guide/en/elasticsearch/client/net-api/current/getting-started-net.html
-
-https://www.tutorialspoint.com/elasticsearch/elasticsearch_cat_apis.htm
-
+https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data
 
