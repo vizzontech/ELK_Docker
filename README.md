@@ -37,9 +37,7 @@ docker volume rm elk_docker_esdata
 
 ``` 
 # Elastic search queries
-
-get all 
-
+You can open console in Kibana and run queries
 ```
 POST /ab_nyc_2019/_search
 {
@@ -50,8 +48,36 @@ POST /ab_nyc_2019/_search
   }
 }
 
-```
+POST /ab_nyc_2019/_search
+{
+  "query" :{
+    "match_all" : {
+    }
+  },
+  "_source": true
+}
 
+POST /ab_nyc_2019/_search
+{
+  "query" :{
+   "match" : {
+    "name" : "Beautiful Brooklyn Bedroom"
+   }
+  }
+}
+
+POST /ab_nyc_2019/_search
+{
+  "query" :{
+    "match" : {
+      "id" : "9859181"
+    }
+  }
+}
+
+GET /ab_nyc_2019/_doc/shQ1FJQBg2KQTfIbG1OP
+
+```
 
 # Docker commands
 force recreate containers
